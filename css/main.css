@@ -55,6 +55,10 @@ ul {
 }
 
 .fas.fa-th:hover {
+  color: var(--text-color);
+}
+
+.fas.fa-th:hover {
   cursor: pointer;
 }
 
@@ -68,6 +72,11 @@ ul {
   padding: .75rem 1rem;
   border-radius: 2px;
   font-weight: 600;
+}
+
+.signup div a:hover {
+  text-decoration: none;
+  cursor: default;
 }
 
 .container {
