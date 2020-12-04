@@ -1,3 +1,113 @@
+:root {
+  font-size: 62.5%;
+  --text-color: hsl(0, 0%, 20%);
+  --icon-color: hsl(0, 0%, 40%);
+  --button-color: hsl(210, 91%, 50%);
+  --footer-color: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: var(--text-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  height: 5rem;
+}
+
+.header-navList {
+  display: flex;
+  margin: 2rem;
+}
+
+.header-navList li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.header-navList li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header-navList li a:hover {
+  text-decoration: underline;
+}
+
+.gmail {
+  margin-left: auto;
+}
+
+.fas.fa-th {
+  font-size: 2rem;
+  color: var(--icon-color);
+}
+
+.fas.fa-th:hover {
+  cursor: pointer;
+}
+
+/* .signup div {
+  border: 1px solid red;
+} */
+
+.signup div a {
+  background-color: var(--button-color);
+  color: white;
+  padding: .75rem 1rem;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.container {
+  height: 90%;
+  width: 60%;
+  margin: 0 auto;
+}
+
 .svg {
   width: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background-color: var(--footer-color);
+  border-top: 1px solid hsl(0, 0%, 87%);
+}
+
+.footer-navList {
+  display: flex;
+  padding: 2rem;
+}
+
+.footer-navList li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.footer-navList li a {
+  text-decoration: none;
+  color: var(--icon-color);
+}
+
+.footer-navList li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bufferItem {
+  margin-left: auto;
 }
