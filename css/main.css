@@ -2,8 +2,11 @@
   font-size: 62.5%;
   --text-color: hsl(0, 0%, 20%);
   --icon-color: hsl(0, 0%, 40%);
-  --button-color: hsl(210, 91%, 50%);
+  --button-color: hsl(220, 86%, 62%);
   --footer-color: hsl(0, 0%, 95%);
+  --shadow-color: hsl(0, 0%, 80%);
+  --search-border: hsl(0, 0%, 88%);
+  --red: hsl(0, 60%, 50%);
 }
 
 * {
@@ -62,14 +65,10 @@ ul {
   cursor: pointer;
 }
 
-/* .signup div {
-  border: 1px solid red;
-} */
-
 .signup div a {
   background-color: var(--button-color);
   color: white;
-  padding: .75rem 1rem;
+  padding: .75rem 1.2rem;
   border-radius: 2px;
   font-weight: 600;
 }
@@ -77,30 +76,104 @@ ul {
 .signup div a:hover {
   text-decoration: none;
   cursor: default;
+  box-shadow: 0px 1px 1px 0px var(--shadow-color);
 }
 
 .container {
   height: 90%;
   width: 60%;
   margin: 0 auto;
+  text-align: center;
+}
+
+.googleImage {
+  margin-top: 13rem;
+}
+
+.googleForm {
+  margin-top: 3rem;
+}
+
+.googleForm-formRow {
+  margin-top: 2rem;
+}
+
+.googleForm-searchContainer {
+  border: 1px solid var(--search-border);
+  border-radius: 3rem;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  text-align: left;
+}
+
+.googleForm-searchContainer:hover {
+  box-shadow: 0px .5px 3px 0px var(--shadow-color);
 }
 
 .svg {
-  width: 10px;
+  width: 2.2rem;
+  /* fill is used for changing the color of an svg */
+  fill: var(--icon-color);
+}
+
+input[type="text"] {
+  width: 80%;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+  font-size: 1.6rem;
+}
+
+.mic {
+  width: 2.2rem;
+  float: right;
+}
+
+.mic:hover {
+  cursor: pointer;
+}
+
+.googleForm-formRow button {
+  background-color: var(--footer-color);
+  border: none;
+  color: var(--icon-color);
+  padding: 1rem 2rem;
+  border-radius: .4rem;
+  font-size: 1.4rem;
+}
+
+.googleForm-formRow button:hover,
+.googleForm-formRow button:active {
+  box-shadow: 0px 0px 0px 1px var(--shadow-color);
+  background-color:  hsl(0, 0%, 96%);
+  color: var(--text-color);
+}
+
+.googleForm-formRow button:active,
+.googleForm-formRow button:focus {
+  box-shadow: 0px 0px 0px 1px var(--button-color);
+  outline: none;
+}
+
+.googleForm-formRow button:last-of-type {
+  margin-left: 1rem;
 }
 
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 5%;
+  height: 4%;
   background-color: var(--footer-color);
   border-top: 1px solid hsl(0, 0%, 87%);
+  font-size: 1.4rem;
 }
 
 .footer-navList {
   display: flex;
-  padding: 2rem;
+  padding: 1.5rem 2.5rem;
 }
 
 .footer-navList li {
@@ -115,6 +188,10 @@ ul {
 
 .footer-navList li a:hover {
   text-decoration: underline;
+}
+
+.footer-navList li a:active {
+  color: var(--red);
 }
 
 .footer-bufferItem {
